@@ -8,25 +8,24 @@
       "activeTab",
       "tabs"
     ],
-    "host_permissions": [
-      "https://chat.openai.com/*"
-    ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
+    "host_permissions": ["https://chatgpt.com/*"],
+    "icons": {
         "16": "icon16.png",
         "48": "icon48.png",
         "128": "icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon48.png"
       }
     },
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [{
-      "matches": ["https://chat.openai.com/*"],
+      "matches": ["https://chatgpt.com/*"],
       "js": ["content.js"],
       "css": ["styles.css"]
     }]
-  }
-  
-    
+}
