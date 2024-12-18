@@ -138,7 +138,7 @@ class ChatGPTThreadViewer {
   
   // Initialize the viewer when page loads
   function initChatGPTThreadViewer() {
-    if (window.location.hostname === 'chat.openai.com') {
+    if (window.location.hostname === 'chatgpt.com') {
       new ChatGPTThreadViewer();
     }
   }
